@@ -82,6 +82,10 @@ test/            controller, model and mailer tests
 
 Controllers require authentication by default. To make an action public, add `allow_unauthenticated_access` to the controller (see `HomeController`).
 
+## Learning log
+
+New to Rails? See [LEARNING.md](LEARNING.md) for notes, goals and resources, updated as I learn.
+
 ## License
 
 [MIT](LICENSE)
