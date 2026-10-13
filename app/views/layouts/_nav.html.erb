@@ -1,0 +1,13 @@
+<nav class="border-b border-gray-200">
+  <div class="container mx-auto flex items-center justify-between px-5 py-4">
+    <%= link_to "Rails Boilerplate", root_path, class: "font-bold text-gray-900" %>
+    <div class="flex items-center gap-4 text-sm">
+      <% if authenticated? %>
+        <%= link_to "Dashboard", dashboard_path, class: "text-gray-700 hover:underline" %>
+        <%= button_to "Sign out", session_path, method: :delete, class: "text-gray-700 hover:underline cursor-pointer" %>
+      <% else %>
+        <%= link_to "Sign in", new_session_path, class: "text-gray-700 hover:underline" %>
+      <% end %>
+    </div>
+  </div>
+</nav>
